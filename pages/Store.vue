@@ -1,17 +1,15 @@
 <template>
   <div class="container">
-      <h3 class="introduction">嗨，我是世恩專員，讓我為你介紹最適合你的外匯餐點</h3>
-      <div class="contact">
-          <b-button variant="outline-purple" href="./dateForm" >電話詢問</b-button>
-          <b-button variant="outline-purple" href="./dateForm" >Line</b-button>
-          <b-button variant="outline-purple" href="./dateForm" >Messenge</b-button>
-      </div>
+    <h3 class="introduction">
+      嗨，我是世恩專員，讓我為你介紹最適合你的外匯餐點
+    </h3>
+    <Contact />
     <b-card-group deck>
       <b-card
         img-src="https://scontent.frmq3-2.fna.fbcdn.net/v/t1.0-9/125427081_2836015216632826_5778174829632141269_o.jpg?_nc_cat=107&ccb=2&_nc_sid=8bfeb9&_nc_ohc=SPiCFxN07o0AX8el7Ct&_nc_ht=scontent.frmq3-2.fna&oh=8c50db78803b2c323adbe8430436f2d7&oe=5FEB90E4"
         img-alt="子瑜的店"
         img-top
-        img-height='225'
+        img-height="225"
         title="燈泡魚"
         sub-title="$300-800"
       >
@@ -27,7 +25,7 @@
         img-alt="林聖翔的店"
         img-top
         title="1997手工窯烤披薩"
-        img-height='225'
+        img-height="225"
         sub-title="$100-600"
       >
         <b-card-text>
@@ -41,7 +39,7 @@
         img-alt="合作的店"
         img-top
         title="元氣先生"
-        img-height='225'
+        img-height="225"
         sub-title="不要訂這個"
       >
         <b-card-text>
@@ -55,7 +53,7 @@
 </template>
 
 <script>
-  export default {};
+export default {};
 </script>
 
 <style scoped>
@@ -66,7 +64,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding-top:100px;
+  padding-top: 100px;
 }
 .place-question {
   color: #6558f6;
@@ -76,14 +74,7 @@
 .btn-left {
   margin-right: 30px;
 }
-.introduction{
-    margin-bottom: 20px;
-}
-.contact{
-    margin-bottom: 20px;
-}
-.btn-outline-purple{
-  border-color: #cbc9fc;
-  color: #6558f6;
+.introduction {
+  margin-bottom: 20px;
 }
 </style>

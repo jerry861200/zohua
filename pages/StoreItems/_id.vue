@@ -1,11 +1,7 @@
 <template>
   <div class="container">
       <h3 class="introduction">嗨，我是世恩專員，讓我為你介紹最適合你的外匯餐點</h3>
-      <div class="contact">
-          <b-button variant="outline-dark" href="./dateForm" >電話詢問</b-button>
-          <b-button variant="outline-dark" href="./dateForm" >Line</b-button>
-          <b-button variant="outline-dark" href="./dateForm" >Messenge</b-button>
-      </div>
+      <Contact/>
       <h3 class="store-name">燈泡魚</h3>
     <b-card-group deck>
       <b-card
