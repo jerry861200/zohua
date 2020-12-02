@@ -1,8 +1,5 @@
 <template>
   <div class="container">
-    <h3 class="introduction">
-      嗨，我是世恩專員，讓我為你介紹最適合你的外匯餐點
-    </h3>
     <Contact />
     <b-card-group deck>
       <b-card
@@ -17,7 +14,7 @@
           Some quick example text to build on the card and make up the bulk of
           the card's content.
         </b-card-text>
-        <b-button href="./storeItems/1" variant="outline-purple">選擇</b-button>
+        <MainButton location="./storeItems/1">選擇</MainButton>
       </b-card>
 
       <b-card
@@ -32,7 +29,7 @@
           Some quick example text to build on the card and make up the bulk of
           the card's content.
         </b-card-text>
-        <b-button href="./storeItems/2" variant="outline-purple">選擇</b-button>
+        <MainButton location="./storeItems/2">選擇</MainButton>
       </b-card>
       <b-card
         img-src="http://www.mrogenki.com/images/imgSec1-1_index.jpg"
@@ -46,14 +43,16 @@
           Some quick example text to build on the card and make up the bulk of
           the card's content.
         </b-card-text>
-        <b-button href="./storeItems/3" variant="outline-purple">選擇</b-button>
+        <MainButton location="./storeItems/3">選擇</MainButton>
       </b-card>
     </b-card-group>
   </div>
 </template>
 
 <script>
-export default {};
+import MainButton from '../components/utils/MainButton.vue';
+export default {
+  components: { MainButton },};
 </script>
 
 <style scoped>
@@ -73,8 +72,5 @@ export default {};
 }
 .btn-left {
   margin-right: 30px;
-}
-.introduction {
-  margin-bottom: 20px;
 }
 </style>

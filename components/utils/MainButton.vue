@@ -8,11 +8,6 @@ export default {
   props: {
     location: String,
   },
-//   computed() {
-//     return {
-//       location: this.props.location,
-//     };
-//   },
 };
 </script>
 <style>

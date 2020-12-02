@@ -1,6 +1,5 @@
 <template>
   <div class="container">
-      <h3 class="introduction">嗨，我是世恩專員，讓我為你介紹最適合你的外匯餐點</h3>
       <Contact/>
       <h3 class="store-name">燈泡魚</h3>
     <b-card-group deck>
@@ -57,15 +56,6 @@ export default {};
 }
 .btn-left {
   margin-right: 30px;
-}
-.introduction{
-    margin-bottom: 20px;
-}
-.contact{
-    margin-bottom: 20px;
-}
-b-card{
-    max-height: 15px;
 }
 .store-name{
     align-self: start;
