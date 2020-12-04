@@ -14,6 +14,8 @@
           Some quick example text to build on the card and make up the bulk of
           the card's content.
         </b-card-text>
+        <div class="purple"><fa :icon="['fas','star']" class="purple"/><fa :icon="['fas','star']" class="purple"/><fa :icon="['fas','star']"/><fa :icon="['fas','star']"/><fa :icon="['far','star']"/></div>
+        
         <MainButton location="./storeItems/1">選擇</MainButton>
       </b-card>
 
@@ -56,6 +58,10 @@ export default {
 </script>
 
 <style scoped>
+
+.purple > *{
+  color: #6558f6;
+}
 .container {
   margin: 0 auto;
   min-height: 100vh;
