@@ -1,10 +1,26 @@
 <template>
-  <div class="container">
-    <h3 class="place-question">活動將在哪舉行呢?</h3>
-    <div>
-      <b-button variant="outline-dark" href="./dateForm" size="lg" class="btn-left">台北</b-button>
-      <b-button variant="outline-dark" href="./dateForm" size="lg">宜蘭</b-button>
-    </div>
+  <div>
+    <div class="container">
+      <img src="../assets/img/avatar.png" alt="" class="avatar">
+      <h4 class="fw-300">Hi!我是Smile，我會問您介紹最適合您活動的餐點</h4>
+      <h4 class="place-question m-3">告訴我活動將在哪裡舉行吧！</h4>
+        <div>  
+          <b-button
+            variant="outline-dark"
+            href="./dateForm"
+            size="lg"
+            class="btn-left"
+            disabled
+            >台北</b-button
+          >
+          <b-button variant="outline-dark" href="./dateForm" size="lg"
+          >宜蘭</b-button
+        >
+        </div>
+        <small class="small">即將開放!</small>
+        
+      </div>
+    <Footer />
   </div>
 </template>
 
@@ -13,22 +29,26 @@ export default {};
 </script>
 
 <style scoped>
+.fw-300{
+  font-weight: 400;
+}
+.avatar{
+  width: 300px;
+  height: auto;
+}
 .container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  min-height: 60vh;
   text-align: center;
-  margin-top: -200px;
 }
-.place-question{
-  color: #6558f6;
-  padding-bottom: 40px;
-  
+.small{
+  margin-right: 112px;
 }
-.btn-left{
+.place-question {
+  color: #f78454;
+  padding-bottom: 10px;
+}
+.btn-left {
   margin-right: 30px;
 }
+
 </style>

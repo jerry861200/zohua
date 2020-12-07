@@ -9,6 +9,7 @@
         img-height="225"
         title="燈泡魚"
         sub-title="$300-800"
+        class="card-width"
       >
         <b-card-text>
           Some quick example text to build on the card and make up the bulk of
@@ -26,6 +27,7 @@
         title="1997手工窯烤披薩"
         img-height="225"
         sub-title="$100-600"
+        class="card-width"
       >
         <b-card-text>
           Some quick example text to build on the card and make up the bulk of
@@ -40,6 +42,7 @@
         title="元氣先生"
         img-height="225"
         sub-title="不要訂這個"
+        class="card-width"
       >
         <b-card-text>
           Some quick example text to build on the card and make up the bulk of
@@ -58,7 +61,9 @@ export default {
 </script>
 
 <style scoped>
-
+.card-width{
+  max-width: 18rem;
+}
 .purple > *{
   color: #6558f6;
 }
