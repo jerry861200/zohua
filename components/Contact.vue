@@ -6,7 +6,6 @@
     <div class="mb-4">
       <MainButton location="./dateForm"> 電話詢問 </MainButton>
       <MainButton location="./dateForm"> line </MainButton>
-      <MainButton location="./dateForm"> Messenge </MainButton>
     </div>
   </div>
 </template>

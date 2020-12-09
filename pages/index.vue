@@ -1,8 +1,8 @@
 <template>
   <div>
     <div class="container">
-      <img src="../assets/img/avatar.png" alt="" class="avatar">
-      <h4 class="fw-300">Hi!我是Smile，我會問您介紹最適合您活動的餐點</h4>
+      <img src="../assets/img/avatar.png" alt="" class="avatar ml-4">
+      <h4 class="fw-400">Hi!我是Smile，我會問您介紹最適合您活動的餐點</h4>
       <h4 class="place-question m-3">告訴我活動將在哪裡舉行吧！</h4>
         <div>  
           <b-button
@@ -29,7 +29,7 @@ export default {};
 </script>
 
 <style scoped>
-.fw-300{
+.fw-400{
   font-weight: 400;
 }
 .avatar{
@@ -37,7 +37,7 @@ export default {};
   height: auto;
 }
 .container {
-  min-height: 60vh;
+  min-height: 56vh;
   text-align: center;
 }
 .small{

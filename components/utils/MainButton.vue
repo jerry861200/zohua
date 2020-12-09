@@ -1,5 +1,5 @@
 <template>
-  <b-button variant="outline-purple" :href="location">
+  <b-button :variant="variant" :href="location">
     <slot> </slot>
   </b-button>
 </template>
@@ -7,18 +7,29 @@
 export default {
   props: {
     location: String,
+    solid:Boolean,
   },
+  computed:{
+    variant(){
+      return this.solid ? "orange" : "outline-orange"
+    }
+  }
 };
 </script>
 <style>
-.btn-outline-purple {
-  border-color: #cbc9fc;
-  color: #6558f6;
+.btn-outline-orange {
+  border-color: #f4b284;
+  color: #f78454;
   transition: all 0.5s;
 }
-.btn-outline-purple:hover {
-  background-color: #6558f6;
+.btn-outline-orange:hover {
+  background-color: #f78454;
   color: white;
-  border-color: #6558f6;
+  border-color: #f78454;
+}
+.btn-orange {
+   background-color: #f78454;
+  color: white;
+  border-color: #f78454;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="footer-background fixed-bottom">
+  <div class="footer-background ">
     <div class="container">
       <b-row class="first-row pt-5 title">
         <b-col cols="6" md="3" class="title"> 作燴全力在宜蘭服務中! </b-col>
