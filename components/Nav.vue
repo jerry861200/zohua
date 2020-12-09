@@ -21,7 +21,7 @@
   </b-navbar>
 </template>
 
-<style>
+<style scoped>
 .logo {
   width: 150px;
   height: auto;

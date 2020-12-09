@@ -7,16 +7,16 @@
 export default {
   props: {
     location: String,
-    solid:Boolean,
+    solid: Boolean,
   },
-  computed:{
-    variant(){
-      return this.solid ? "orange" : "outline-orange"
-    }
-  }
+  computed: {
+    variant() {
+      return this.solid ? "orange" : "outline-orange";
+    },
+  },
 };
 </script>
-<style>
+<style scoped>
 .btn-outline-orange {
   border-color: #f4b284;
   color: #f78454;
@@ -25,11 +25,17 @@ export default {
 .btn-outline-orange:hover {
   background-color: #f78454;
   color: white;
-  border-color: #f78454;
+  background-color: #f78454;
 }
 .btn-orange {
-   background-color: #f78454;
+  background-color: #f78454;
   color: white;
   border-color: #f78454;
+  transition: all 0.5s;
+}
+.btn-orange:hover {
+  background-color: #f4b284;
+  border-color: #f4b284;
+  color: white;
 }
 </style>
