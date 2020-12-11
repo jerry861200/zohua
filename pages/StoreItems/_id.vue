@@ -17,7 +17,7 @@
     </div>
     <b-card-group deck class="mb-3">
       <b-card
-        img-src="../../assets/img/luway.jpg"
+        img-src="../../assets/img/美式臘腸.png"
         img-alt="菇雞菇雞鹹派"
         img-top
         img-height="250"
@@ -25,8 +25,8 @@
         class="menu-card pt-2 px-2"
       >
       </b-card>
-    </b-card-group>
-      <!-- <b-card
+
+      <b-card
         img-src="../../assets/img/莫札瑞拉.png"
         img-alt="蜂蜜甜橙瑪德蓮"
         img-top
@@ -47,7 +47,7 @@
       >
       </b-card>
     </b-card-group>
-    <b-card-group deck>
+    <!-- <b-card-group deck>
       <b-card
         img-src="../../assets/img/mushroom.png"
         img-alt="菇雞菇雞鹹派"
