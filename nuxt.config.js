@@ -38,7 +38,7 @@ export default {
     'nuxt-fontawesome',
     // Simple usage
     '@nuxtjs/google-fonts',
- 
+    'vue-social-sharing/nuxt'
 
   ],
   fontawesome: {
