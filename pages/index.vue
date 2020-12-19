@@ -1,54 +1,169 @@
 <template>
-  <div>
-    <div class="container">
-      <img src="../assets/img/avatar.png" alt="" class="avatar ml-4">
-      <h4 class="fw-400">Hi!我是Smile，我會問您介紹最適合您活動的餐點</h4>
-      <h4 class="place-question m-3">告訴我活動將在哪裡舉行吧！</h4>
-        <div>  
-          <b-button
-            variant="outline-dark"
-            href="./dateForm"
-            size="lg"
-            class="btn-left"
-            disabled
-            >台北</b-button
-          >
-          <b-button variant="outline-dark" href="./dateForm" size="lg"
-          >宜蘭</b-button
-        >
-        </div>
-        <small class="small">即將開放!</small>
+  <div class="container">
+    <b-card-group deck>
+      <b-card
+        img-src="../assets/img/bulb_fish_logo.jpg"
+        img-alt="子瑜的店"
+        img-top
+        img-height="225"
+        title="燈泡魚"
+        class="card-width"
+        no-body
+      >
+        <b-card-body class="pb-1">
+          <b-card-title>
+            燈泡魚
+          </b-card-title>
+          <b-card-text> 輕食/甜點/西式主餐 </b-card-text>
+          
+        </b-card-body>
         
-      </div>
-    <Footer />
+        <b-button variant="orange" to="./storeItems/1" squared class="h">看菜單</b-button>
+      </b-card>
+
+      <b-card
+        img-src="../assets/img/1997.jpg"
+        img-alt="林聖翔的店"
+        img-top
+        title="1997手工窯烤披薩"
+        img-height="225"
+        class="card-width"
+        no-body
+      >
+      <b-card-body class="pb-1">
+          <b-card-title>
+            1997手工窯烤披薩
+          </b-card-title>
+        <b-card-text> 窯烤披薩/美式炸物/甜點 </b-card-text>
+        
+        </b-card-body>
+        <b-button variant="orange" to="./storeItems/2" squared class="h">看菜單</b-button>
+      </b-card>
+
+      <b-card
+        img-src="../assets/img/corridor_logo.png"
+        img-alt="合作的店"
+        img-top
+        title="飲廊corridor"
+        img-height="225"
+        class="card-width"
+        no-body
+      >
+        
+        <b-card-body class="pb-1">
+          <b-card-title>
+            飲廊corridor
+          </b-card-title>
+       <b-card-text> 義式燉麵飯/輕食甜點/調酒 </b-card-text>
+        
+        </b-card-body>
+        <b-button variant="orange" to="./storeItems/1" squared class="h">看菜單</b-button>
+      </b-card>
+    </b-card-group>
+
+    <b-card-group deck class="mt-3">
+      <b-card
+        img-src="../assets/img/fang_rice_logo.jpg"
+        img-alt="子瑜的店"
+        img-top
+        img-height="225"
+        title="阿芳鹹粥"
+        class="card-width"
+        no-body
+      >
+         <b-card-body class="pb-1">
+          <b-card-title>
+            阿芳鹹粥
+          </b-card-title>
+        <b-card-text> 特色鹹粥／祖傳滷味 </b-card-text>
+        
+        </b-card-body>
+        <b-button variant="orange" to="./storeItems/1" squared class="h">看菜單</b-button>
+      </b-card>
+
+      <b-card
+        img-src="../assets/img/smile_moon.jpg"
+        img-alt="微笑月亮手作甜點"
+        img-top
+        title="微笑月亮手作甜點"
+        img-height="225"
+        class="card-width"
+        no-body
+      >
+        
+        <b-card-body class="pb-1">
+          <b-card-title>
+            阿芳鹹粥
+          </b-card-title>
+       <b-card-text> 客製蛋糕／泡芙/西式點心 </b-card-text>
+        
+        </b-card-body>
+        <b-button variant="orange" to="./storeItems/1" squared class="h">看菜單</b-button>
+      </b-card>
+      <b-card
+        img-src="../assets/img/teacher_bbq.jpg"
+        img-alt="合作的店"
+        img-top
+        title="哩老師烤好"
+        img-height="225"
+        class="card-width"
+        no-body
+      >
+        
+        <b-card-body class="pb-1">
+          <b-card-title>
+            阿芳鹹粥
+          </b-card-title>
+        <b-card-text> 行動BBQ </b-card-text>
+        
+        </b-card-body>
+        <b-button variant="orange" to="./storeItems/1" squared class="h">看菜單</b-button>
+      </b-card>
+    </b-card-group>
   </div>
 </template>
 
 <script>
-export default {};
+import Stars from "../components/Stars.vue";
+import MainButton from "../components/utils/MainButton.vue";
+export default {
+  components: { MainButton, Stars },
+  data(){
+    return {
+      solid:true,
+    }
+  }
+};
 </script>
 
 <style scoped>
-.fw-400{
-  font-weight: 400;
-}
-.avatar{
-  width: 300px;
-  height: auto;
-}
-.container {
-  min-height: 56vh;
-  text-align: center;
-}
-.small{
-  margin-right: 112px;
-}
-.place-question {
-  color: #f78454;
-  padding-bottom: 10px;
-}
-.btn-left {
-  margin-right: 30px;
+.card-width {
+  max-width: 17rem;
 }
 
+.container {
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 100px;
+}
+.btn-orange {
+   background-color: #f3c19d;
+  color: white;
+  border-color: #f3c19d;
+  transition: all 0.5s;
+  
+}
+.btn-orange:hover {
+   background-color: #f78454;
+  color: white;
+  border-color: #f78454;
+}
+.h{
+  line-height: 35px;
+  font-size: 25px;
+}
 </style>

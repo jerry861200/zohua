@@ -1,132 +1,163 @@
 <template>
   <div class="container">
-    <h2 class="store-name mt-4">1997手工窯烤披薩</h2>
-    <div class="border-p p-5 mt-4 mb-5">
+    <div class="topic-img mt-4 mb-4"></div>
+    <div class="blabla">
       <b-row>
-        <b-col cols="6">
-          <h3 class="mb-3 px-3 boss-name">林聖翔</h3>
-      <p class="paragraph p-3">
-        林聖翔從高中畢業起就在窯烤披薩店打工，上了宜蘭大學後便創業做起窯烤披薩餐車，累積了7年的功夫，認真烤好每一片經典拿坡里式披薩，每片披薩都經過24小時的天然發酵，以及600度高溫的義式窯烤，最後撒上純天然的進口起司，絕對是作燴平台認可宜蘭第一的披薩
-      </p>
+        <b-col md="3"></b-col>
+        <b-col md="6">
+          <h5>挑到喜歡的菜單了嗎!</h5>
+          <h5>聯絡作燴替你準備</h5>
+          <Contact />
+          <h4 class="mt-4 black">菜單介紹</h4>
         </b-col>
-        <b-col cols="6">
-          <div class="boss-img2"></div>
+        <b-col md="3">
+          <img src="../../assets/img/1997.jpg" alt="" class="store-logo" />
         </b-col>
       </b-row>
-      
     </div>
-    <b-card-group deck class="mb-3">
-      <b-card
-        img-src="../../assets/img/sausage.png"
-        img-alt="菇雞菇雞鹹派"
-        img-top
-        img-height="250"
-        title="義式傳統臘腸"
-        class="menu-card pt-2 px-2"
-      >
-      </b-card>
 
-      <b-card
-        img-src="../../assets/img/mozarella.png"
-        img-alt="蜂蜜甜橙瑪德蓮"
-        img-top
-        title="經典瑪格麗特"
-        img-height="250"
-        
-        class="menu-card pt-2 px-2"
-      >
+    <b-card-group columns class="mb-3">
+      <b-card no-body>
+        <b-card-body class="text-center">
+          <h4 class="main-food">-主餐-</h4>
+          <p class="content">
+            熱情夏威夷披薩 <br />
+            經典瑪格麗特披薩 <br />
+            義式傳統臘腸披薩 <br />
+            招牌蜂蜜起司披薩 <br />
+          </p>
+          <h4 class="snack">-點心-</h4>
+          <p class="content">美式脆薯 <br /></p>
+          <h4 class="drink">-湯品&飲品-</h4>
+          <p class="content">松柏嶺青茶 <br /></p>
+        </b-card-body>
+        <b-list-group flush>
+          <b-list-group-item class="blabla price">350/人</b-list-group-item>
+          <b-list-group-item class="content"
+            >平日最低訂購:18人</b-list-group-item
+          >
+          <b-list-group-item class="content"
+            >假日最低訂購:35人</b-list-group-item
+          >
+        </b-list-group>
       </b-card>
-      <b-card
-        img-src="../../assets/img/seafood.png"
-        img-alt="經典檸檬塔"
-        img-top
-        title="宜蘭漁夫海鮮"
-        img-height="250"
-        
-        class="menu-card pt-2 px-2"
-      >
+      <b-card no-body>
+        <b-card-body class="text-center">
+          <h4 class="main-food">-主餐-</h4>
+          <p class="content">
+            宜蘭蔥鴨胸披薩<br />
+            瑪格麗特皇后披薩 <br />
+            青醬野菇雞肉披薩 <br />
+            核桃蜂蜜起司披薩 <br />
+          </p>
+          <h4 class="snack">-點心-</h4>
+          <p class="content">切達起司薯條  <br />
+          爐烤義式蔬菜</p>
+          <h4 class="drink">-湯品&飲品-</h4>
+          <p class="content">馬鈴薯奶油蘑菇濃湯 <br />
+          義豐冬瓜青茶</p>
+        </b-card-body>
+        <b-list-group flush>
+          <b-list-group-item class="blabla price">500/人</b-list-group-item>
+          <b-list-group-item class="content"
+            >平日最低訂購:12人</b-list-group-item
+          >
+          <b-list-group-item class="content"
+            >假日最低訂購:24人</b-list-group-item
+          >
+        </b-list-group>
       </b-card>
+      <!-- 第三個 -->
+      <b-card no-body>
+        <b-card-body class="text-center">
+          <h4 class="main-food">-主餐-</h4>
+          <p class="content">
+            宜蘭蔥鴨胸披薩  <br />
+            瑪格麗特皇后披薩  <br />
+            白醬松露野菇披薩 <br />
+            青醬漁夫海鮮披薩 <br />
+            核桃蜂蜜起司披薩 <br/>
+            榛果巧克力布朗尼披薩 <br/>
+            爐烤大溪漁港透抽 <br/>
+烤prime美國厚切牛小排 
+          </p>
+          <h4 class="snack">-點心-</h4>
+          <p class="content">松露薯條 <br />
+          切達起司炸雞</p>
+          <h4 class="drink">-湯品&飲品-</h4>
+          <p class="content">紅茶拿鐵 <br />
+          番茄海鮮湯</p>
+        </b-card-body>
+        <b-list-group flush>
+          <b-list-group-item class="blabla price">800/人</b-list-group-item>
+          <b-list-group-item class="content"
+            >平日最低訂購:12人</b-list-group-item
+          >
+          <b-list-group-item class="content"
+            >假日最低訂購:20人</b-list-group-item
+          >
+        </b-list-group>
+      </b-card>
+      
     </b-card-group>
-    <!-- <b-card-group deck>
-      <b-card
-        img-src="../../assets/img/mushroom.png"
-        img-alt="菇雞菇雞鹹派"
-        img-top
-        img-height="250"
-        title="新鮮松露野菇"
-        
-        class="menu-card pt-2 px-2"
-      >
-      </b-card>
-
-      <b-card
-        img-src="../../assets/img/夏威夷.png"
-        img-alt="蜂蜜甜橙瑪德蓮"
-        img-top
-        title="熱情夏威夷"
-        img-height="250"
-        class="menu-card pt-2 px-2"
-      >
-      </b-card>
-      <b-card
-        img-src="../../assets/img/fried.jpg"
-        img-alt="經典檸檬塔"
-        img-top
-        title="時光炸物拼盤"
-        img-height="250"
-        class="menu-card pt-2 px-2"
-      >
-      </b-card>
-    </b-card-group> -->
   </div>
 </template>
 
 <script>
-export default {};
+import Contact from "../../components/Contact.vue";
+export default {
+  components: { Contact },
+};
 </script>
 
 <style scoped>
+.price {
+  font-size: 24px;
+  font-weight: 450;
+}
+.black {
+  color: #293845;
+}
 .container {
   min-height: 100vh;
 }
-.place-question {
-  color: #6558f6;
-  padding-bottom: 40px;
-  margin-top: -100px;
+.store-logo {
+  width: 150px;
+  object-fit: contain;
 }
-.btn-left {
-  margin-right: 30px;
-}
-.store-name {
+.blabla {
+  text-align: center;
   color: #f78454;
-  font-weight: 900;
 }
 .border-p {
   border: #e1e7ec 2px solid;
 }
-.boss-name{
+.boss-name {
   color: #293845;
   font-weight: 800;
 }
-.boss-img{
-  width: 250px;
-}
-.boss-img2{
-  background-image: url("../../assets/img/1997_shawn.jpg");
+
+.topic-img {
+  background-image: url("../../assets/img/mozarella.png");
   background-size: cover;
-  height: 18rem;
+  height: 25rem;
 }
-.paragraph{
+.paragraph {
   font-weight: 700;
   color: #4c5964;
   font-size: 20px;
 }
-.menu-card{
-  border: #f78454 2px solid;
-  text-align: center;
+.content {
+  font-weight: 450;
+  font-size: 20px;
+}
+.main-food {
+  color: #bf4a49;
+}
+.snack {
   color: #f78454;
 }
-.card-title{
-  font-weight: 900;
+.drink {
+  color: #539eb8;
 }
 </style>

@@ -14,7 +14,8 @@ export default {
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
-    '~/assets/fonts/NotoSans.css'
+    '~/assets/fonts/NotoSans.css',
+    '~/assets/css/navbar.css'
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
