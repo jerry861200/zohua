@@ -2,12 +2,19 @@
   <div>
     
     <div class="">
-      <b-button variant="orange" class="f-bold btn-contact" @click="alertPhone">電話即時詢問</b-button>
+      <b-alert v-model="showDismissibleAlert" variant="success" dismissible show>
+      電話：0929232210
+    </b-alert>
+      <b-button @click="showDismissibleAlert=true" variant="orange" class="f-bold btn-contact my-1">
+      電話即時詢問
+      </b-button>
+    <!-- </b-button>
+      <b-button variant="orange" class="f-bold btn-contact my-1" @click="alertPhone">電話即時詢問</b-button> -->
 
-      <a href="https://lin.ee/JDWz3YM"
-        ><b-button variant="line" class="f-bold btn-contact" >
+      <a href="https://lin.ee/XwGVgkX"><b-button variant="line" class="f-bold btn-contact" >
          Line即時詢問</b-button
       ></a>
+      
     </div>
   </div>
 </template>
@@ -42,6 +49,11 @@
 
 <script>
 export default {
+  data(){
+    return{
+      showDismissibleAlert:false,
+    }
+  },
   methods:{
     alertPhone(){
       alert('0929232210');

@@ -1,12 +1,12 @@
 <template>
-  <div class="bg-index">
+  <!-- <div class="bg-index"> -->
     <div class="container">
       <b-card-group deck>
         <b-card
-          img-src="../assets/img/bulb_fish_logo.jpg"
+          img-src="../assets/img/fish.svg"
           img-alt="子瑜的店"
           img-top
-          img-height="225"
+          
           title="燈泡魚"
           class="card-width"
           no-body
@@ -26,7 +26,7 @@
           img-alt="林聖翔的店"
           img-top
           title="1997手工窯烤披薩"
-          img-height="225"
+          
           class="card-width"
           no-body
         >
@@ -44,7 +44,7 @@
           img-alt="合作的店"
           img-top
           title="飲廊corridor"
-          img-height="225"
+          
           class="card-width"
           no-body
         >
@@ -63,7 +63,7 @@
           img-src="../assets/img/fang_rice_logo.jpg"
           img-alt="子瑜的店"
           img-top
-          img-height="225"
+          
           title="阿芳鹹粥"
           class="card-width"
           no-body
@@ -82,7 +82,7 @@
           img-alt="微笑月亮手作甜點"
           img-top
           title="微笑月亮手作甜點"
-          img-height="225"
+          
           class="card-width"
           no-body
         >
@@ -99,7 +99,7 @@
           img-alt="合作的店"
           img-top
           title="哩老師烤好"
-          img-height="225"
+          
           class="card-width"
           no-body
         >
@@ -113,7 +113,7 @@
         </b-card>
       </b-card-group>
     </div>
-  </div>
+  <!-- </div> -->
 </template>
 
 <script>

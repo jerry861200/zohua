@@ -2,7 +2,7 @@
   <div>
     <Nav/>
     <Nuxt class="mt-content"/>
-    
+    <Footer/>
   </div>
 </template>
 

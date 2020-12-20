@@ -5,7 +5,7 @@
         <img class="logo" src="../assets/img/logo-1.png" alt="Kitten" />
       </NuxtLink>
 
-      <div class="ml-auto mr-3">
+      <div class="right ">
         <h4 class="contact-title">讓我們幫你推薦最適合的店家!</h4>
         <Contact />
       </div>
@@ -44,6 +44,10 @@
   width: auto;
   height: 100px;
 }
+.right{
+  margin-left: auto;
+  margin-right: 14px;
+}
 @media (max-width: 740px) {
   .logo {
     width: auto;
@@ -58,5 +62,9 @@
   .avatar {
     display: none;
   }
+  .right{
+  margin-left: 10px;
+  margin-right: 0px;
+}
 }
 </style>
