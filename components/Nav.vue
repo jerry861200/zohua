@@ -1,12 +1,13 @@
 <template>
   <b-navbar variant="faded" type="light" class="stickey-top navbar-border">
     <div class="container">
-      <img class="logo" src="../assets/img/logo-1.png" alt="Kitten" />
+      <NuxtLink to="/">
+        <img class="logo" src="../assets/img/logo-1.png" alt="Kitten" />
+      </NuxtLink>
+
       <div class="ml-auto mr-3">
-        <h4 class="contact-title m-2 mt-3">
-          讓我們幫你推薦最適合的店家!
-          </h4>   
-        <Contact/>
+        <h4 class="contact-title">讓我們幫你推薦最適合的店家!</h4>
+        <Contact />
       </div>
       <div class="avatar-container">
         <img src="../assets/img/smile_circle.jpg" alt="" class="avatar" />
@@ -21,12 +22,15 @@
   height: 130px;
 }
 
-.contact-title{
+
+.contact-title {
   color: #6d6d6d;
+  margin-top: 15px;
+  margin-left:5px
 }
 .navbar-border {
   /* border-width: medium; */
-  border: #cdcdcd 1.4px solid;
+  border-bottom: #cdcdcd 3px solid;
 }
 .btn-orange {
   background-color: #f78454;
@@ -40,9 +44,19 @@
   width: auto;
   height: 100px;
 }
-.btn{
-    width: 8em;
-    height: auto;
-    font-size: 25px;
+@media (max-width: 740px) {
+  .logo {
+    width: auto;
+    height: 60px;
+  }
+  .contact-title {
+    color: #6d6d6d;
+    font-size: 10px;
+    margin-top: 4px;
+    margin-left: 3px;
+  }
+  .avatar {
+    display: none;
+  }
 }
 </style>

@@ -1,8 +1,8 @@
 <template>
   <div>
     
-    <div class="my-3 ">
-      <b-button variant="orange" class="f-bold btn-contact" >電話即時詢問</b-button>
+    <div class="">
+      <b-button variant="orange" class="f-bold btn-contact" @click="alertPhone">電話即時詢問</b-button>
 
       <a href="https://lin.ee/JDWz3YM"
         ><b-button variant="line" class="f-bold btn-contact" >
@@ -39,3 +39,13 @@
   color: white;
 }
 </style>
+
+<script>
+export default {
+  methods:{
+    alertPhone(){
+      alert('0929232210');
+    }
+  },
+};
+</script>

@@ -12,6 +12,7 @@
         </b-col>
         <b-col md="3">
           <img src="../../assets/img/1997.jpg" alt="" class="store-logo" />
+          <h5 class="main-food">1997手工窯烤披薩</h5>
         </b-col>
       </b-row>
     </div>
