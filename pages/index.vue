@@ -1,6 +1,9 @@
 <template>
   <!-- <div class="bg-index"> -->
     <div class="container">
+      <iframe width="100%" height="600px" src="https://www.surveycake.com/s/gMmL0"
+    style="border:#ddd 1px solid;" allowTransparency="true" frameborder="0" class="mb-3"></iframe>
+
       <b-card-group deck>
         <b-card
           img-src="../assets/img/fish.svg"
