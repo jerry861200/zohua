@@ -18,7 +18,7 @@
     </div>
 
     <b-card-group columns class="mb-3">
-      <b-card no-body>
+      <b-card no-body class="border-orange">
         <b-card-body class="text-center">
           <h4 class="main-food">-主餐-</h4>
           <p class="content">
@@ -42,7 +42,7 @@
           >
         </b-list-group>
       </b-card>
-      <b-card no-body>
+      <b-card no-body class="border-orange">
         <b-card-body class="text-center">
           <h4 class="main-food">-主餐-</h4>
           <p class="content">
@@ -52,11 +52,15 @@
             核桃蜂蜜起司披薩 <br />
           </p>
           <h4 class="snack">-點心-</h4>
-          <p class="content">切達起司薯條  <br />
-          爐烤義式蔬菜</p>
+          <p class="content">
+            切達起司薯條 <br />
+            爐烤義式蔬菜
+          </p>
           <h4 class="drink">-湯品&飲品-</h4>
-          <p class="content">馬鈴薯奶油蘑菇濃湯 <br />
-          義豐冬瓜青茶</p>
+          <p class="content">
+            馬鈴薯奶油蘑菇濃湯 <br />
+            義豐冬瓜青茶
+          </p>
         </b-card-body>
         <b-list-group flush>
           <b-list-group-item class="blabla price">500/人</b-list-group-item>
@@ -69,25 +73,29 @@
         </b-list-group>
       </b-card>
       <!-- 第三個 -->
-      <b-card no-body>
+      <b-card no-body class="border-orange">
         <b-card-body class="text-center">
           <h4 class="main-food">-主餐-</h4>
           <p class="content">
-            宜蘭蔥鴨胸披薩  <br />
-            瑪格麗特皇后披薩  <br />
+            宜蘭蔥鴨胸披薩 <br />
+            瑪格麗特皇后披薩 <br />
             白醬松露野菇披薩 <br />
             青醬漁夫海鮮披薩 <br />
-            核桃蜂蜜起司披薩 <br/>
-            榛果巧克力布朗尼披薩 <br/>
-            爐烤大溪漁港透抽 <br/>
-烤prime美國厚切牛小排 
+            核桃蜂蜜起司披薩 <br />
+            榛果巧克力布朗尼披薩 <br />
+            爐烤大溪漁港透抽 <br />
+            烤prime美國厚切牛小排
           </p>
           <h4 class="snack">-點心-</h4>
-          <p class="content">松露薯條 <br />
-          切達起司炸雞</p>
+          <p class="content">
+            松露薯條 <br />
+            切達起司炸雞
+          </p>
           <h4 class="drink">-湯品&飲品-</h4>
-          <p class="content">紅茶拿鐵 <br />
-          番茄海鮮湯</p>
+          <p class="content">
+            紅茶拿鐵 <br />
+            番茄海鮮湯
+          </p>
         </b-card-body>
         <b-list-group flush>
           <b-list-group-item class="blabla price">800/人</b-list-group-item>
@@ -99,7 +107,6 @@
           >
         </b-list-group>
       </b-card>
-      
     </b-card-group>
   </div>
 </template>
@@ -160,5 +167,8 @@ export default {
 }
 .drink {
   color: #539eb8;
+}
+.border-orange {
+  border: #f78454 2px solid;
 }
 </style>

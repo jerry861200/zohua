@@ -8,9 +8,9 @@
 }
 @media(max-width:720px){
     .btn-contact{
-        width: 10em;
+        width: 11em;
         height: auto;
-        font-size: 10px;
+        font-size: 14px;
         margin:2px;
         padding: 3px 0px 3px 0px;
         border:none;

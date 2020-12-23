@@ -13,7 +13,7 @@
       </b-row>
       <b-row class="mt-3">
         <b-col cols="12" md="6" class="content">
-          信箱:jimmy5811223@gmail.com
+          信箱:zoheyeats@gmail.com
         </b-col>
         <b-col cols="12" md="6" class="content"></b-col>
       </b-row>

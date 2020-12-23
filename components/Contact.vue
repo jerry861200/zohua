@@ -1,26 +1,29 @@
 <template>
   <div>
-    
     <div class="">
-      <b-alert v-model="showDismissibleAlert" variant="success" dismissible show>
+      <!-- <a href="tel:10086">撥打10086</a> -->
+      <!-- <b-alert v-model="showDismissibleAlert" variant="success" dismissible show>
       電話：0929232210
-    </b-alert>
-      <b-button @click="showDismissibleAlert=true" variant="orange" class="f-bold btn-contact my-1">
-      電話即時詢問
-      </b-button>
-    <!-- </b-button>
+    </b-alert> -->
+      <a href="tel:0929232210">
+        <b-button variant="orange" class="f-bold btn-contact my-1">
+          電話即時詢問
+        </b-button>
+      </a>
+      <!-- </b-button>
       <b-button variant="orange" class="f-bold btn-contact my-1" @click="alertPhone">電話即時詢問</b-button> -->
 
-      <a href="https://lin.ee/XwGVgkX"><b-button variant="line" class="f-bold btn-contact" >
-         Line即時詢問</b-button
-      ></a>
-      
+      <a href="https://lin.ee/XwGVgkX"
+        ><b-button variant="line" class="f-bold btn-contact">
+          Line即時詢問</b-button
+        ></a
+      >
     </div>
   </div>
 </template>
 
 <style>
-  .btn-line {
+.btn-line {
   background-color: #33c02b;
   color: white;
   border-color: #33c02b;
@@ -31,7 +34,7 @@
   border-color: #5fd35a;
   color: white;
 }
-.f-bold{
+.f-bold {
   font-weight: 800;
 }
 .btn-orange {
@@ -49,15 +52,15 @@
 
 <script>
 export default {
-  data(){
-    return{
-      showDismissibleAlert:false,
-    }
-  },
-  methods:{
-    alertPhone(){
-      alert('0929232210');
-    }
-  },
+  // data(){
+  //   return{
+  //     showDismissibleAlert:false,
+  //   }
+  // },
+  // methods:{
+  //   alertPhone(){
+  //     alert('0929232210');
+  //   }
+  // },
 };
 </script>
