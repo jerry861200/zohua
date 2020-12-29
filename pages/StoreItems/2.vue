@@ -1,7 +1,42 @@
 <template>
   <div class="container">
-    <div class="topic-img mt-4 mb-4"></div>
-    <div class="blabla">
+    <div class="topic-img">
+<b-carousel
+      id="carousel-1"
+      v-model="slide"
+      :interval="4000"
+      controls
+      indicators
+      background="#ababab"
+      img-width="240"
+      img-height="240"
+      style="text-shadow: 1px 1px 2px #333"
+      @sliding-start="onSlideStart"
+      @sliding-end="onSlideEnd"
+    >
+      <!-- Text slides with image -->
+      <b-carousel-slide
+        img-src="../../assets/img/1997/1997_1.svg"
+        
+      ></b-carousel-slide>
+      <b-carousel-slide
+        img-src="../../assets/img/1997/1997_2.svg"
+      ></b-carousel-slide>
+      <b-carousel-slide
+        img-src="../../assets/img/1997/1997_3.svg"
+      ></b-carousel-slide>
+      <b-carousel-slide
+        img-src="../../assets/img/1997/1997_4.svg"
+      ></b-carousel-slide>
+      <b-carousel-slide
+        img-src="../../assets/img/1997/1997_5.svg"
+      ></b-carousel-slide>
+    </b-carousel>
+    </div>
+    
+
+    <!-- <div class="topic-img mt-4 mb-4"></div> -->
+    <!-- <div class="blabla">
       <b-row>
         <b-col md="3"></b-col>
         <b-col md="6">
@@ -72,8 +107,8 @@
           >
         </b-list-group>
       </b-card>
-      <!-- 第三個 -->
-      <b-card no-body class="border-orange">
+      
+      <b-card no-body>
         <b-card-body class="text-center">
           <h4 class="main-food">-主餐-</h4>
           <p class="content">
@@ -107,7 +142,7 @@
           >
         </b-list-group>
       </b-card>
-    </b-card-group>
+    </b-card-group> -->
   </div>
 </template>
 
@@ -115,10 +150,27 @@
 import Contact from "../../components/Contact.vue";
 export default {
   components: { Contact },
+  data() {
+    return {
+      slide: 0,
+      sliding: null,
+    };
+  },
+  methods: {
+    onSlideStart(slide) {
+      this.sliding = true;
+    },
+    onSlideEnd(slide) {
+      this.sliding = false;
+    },
+  },
 };
 </script>
 
 <style scoped>
+.topic-img{
+  height: 140px;
+}
 .price {
   font-size: 24px;
   font-weight: 450;
@@ -145,11 +197,6 @@ export default {
   font-weight: 800;
 }
 
-.topic-img {
-  background-image: url("../../assets/img/mozarella.png");
-  background-size: cover;
-  height: 25rem;
-}
 .paragraph {
   font-weight: 700;
   color: #4c5964;
